@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ImageView for displaying entity image -->
+    <ImageView
+        android:id="@+id/entity_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/entity_1" />
+
+    <!-- TextView for displaying entity name -->
+    <TextView
+        android:id="@+id/entity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entity_image"
+        android:layout_marginTop="16dp"
+        android:text="Entity Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- TextView for displaying entity type -->
+    <TextView
+        android:id="@+id/entity_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entity_name"
+        android:layout_marginTop="8dp"
+        android:text="Entity Type"
+        android:textSize="16sp" />
+
+</RelativeLayout>
