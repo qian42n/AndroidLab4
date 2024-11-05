@@ -2,21 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="8dp">
 
-    <TextView
-        android:id="@+id/entity_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Entity Name"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <!-- ImageView for entity icon -->
+    <ImageView
+        android:id="@+id/entity_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/entity_image_description" />
 
-    <TextView
-        android:id="@+id/entity_type"
+    <!-- LinearLayout to hold text information -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entity Type"
-        android:textSize="16sp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/entity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entity_name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/entity_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entity_type"
+            android:textSize="16sp" />
+    </LinearLayout>
 </LinearLayout>

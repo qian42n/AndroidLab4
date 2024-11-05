@@ -25,11 +25,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private List<Entity> loadEntities() {
-        // Sample data for demonstration
+        // Creating entities with IDs and names that match the drawable images
         List<Entity> entities = new ArrayList<>();
-        entities.add(new Entity(1, "Entity Name 1", "Entity Type 1"));
-        entities.add(new Entity(2, "Entity Name 2", "Entity Type 2"));
-        entities.add(new Entity(3, "Entity Name 3", "Entity Type 3"));
+        entities.add(new Entity(1, "Storage Minecart", "Type 1"));
+        entities.add(new Entity(2, "Powered Minecart", "Type 2"));
+        entities.add(new Entity(3, "Minecart with TNT", "Type 3"));
+        entities.add(new Entity(4, "Minecart with Hopper", "Type 4"));
+        entities.add(new Entity(5, "Minecart with Spawner", "Type 5"));
+        entities.add(new Entity(6, "Creeper", "Type 6"));
+        entities.add(new Entity(7, "Skeleton", "Type 7"));
+        // Continue adding entities as per your drawable resources
         return entities;
     }
 }
